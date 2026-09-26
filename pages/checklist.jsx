@@ -1,0 +1,3 @@
+import Seo from 'components/Seo';
+const groups=[['이사 전','퇴거·입주 시간 확인','엘리베이터와 주차 사용 가능 여부 확인','새집 가구 배치와 반입 경로 확인','당일 필요한 물품 별도 보관'],['이사 당일','방별 상자 표시 확인','중요 서류와 귀중품 직접 관리','파손되기 쉬운 물건 상태 확인','기존 집의 수납장과 발코니 확인'],['반입 후','전기·수도·배수 상태 확인','가구와 가전 외관 확인','상자 수와 방별 물건 확인','문제 발견 시 사진과 메모 남기기']];
+export default function Checklist(){return <><Seo title="이사 점검표 | 바른길 이사" description="이사 전, 당일, 반입 후에 확인할 항목을 시기별로 정리한 이사 점검표입니다." path="/checklist" /><div className="page-head"><p className="eyebrow">점검표</p><h1>이사 단계별 확인 항목</h1><p>필요한 항목을 메모하거나 인쇄하여 이사 일정에 맞춰 사용하세요.</p></div><div className="check-grid">{groups.map(([title,...items])=><section className="check-card" key={title}><h2>{title}</h2><ul>{items.map(item=><li key={item}>{item}</li>)}</ul></section>)}</div></>}

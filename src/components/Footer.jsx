@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Footer() { return <footer><div className="footer-inner"><div><Link className="brand" href="/">바른길 <span>이사</span></Link><p>이사 준비 과정과 공간별 점검 방법을 정리합니다.</p></div><nav aria-label="하단 메뉴"><Link href="/guide">이사 준비</Link><Link href="/checklist">점검표</Link><Link href="/about">사이트 소개</Link></nav></div><div className="copyright">© 2026 바른길 이사</div></footer>; }
